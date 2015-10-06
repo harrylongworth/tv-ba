@@ -24,6 +24,7 @@ var caption_colour = '#fff';
 var current_audio = 0;
 var too_soon = 0;
 var main_audio;
+var fx;
 
 function now_okay() {
     too_soon = 0;
