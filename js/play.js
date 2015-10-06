@@ -66,7 +66,7 @@ var playState = {
     game.input.keyboard.addKeyCapture([ Phaser.Keyboard.LEFT, Phaser.Keyboard.RIGHT, Phaser.Keyboard.SPACEBAR ]);
 
       // detect sound finishes and go to next page
-    // fx.onStop.add(listener_right, this);
+    fx.onStop.add(listener_right, this);
       
 },// END Create
 
