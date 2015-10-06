@@ -55,7 +55,7 @@ var playState = {
         pointer=pointer+audio_duration[i];
     }
     
-    fx.play(0);
+    
     
     // Enable Keyboard input
     this.leftKey = game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
@@ -66,8 +66,9 @@ var playState = {
     game.input.keyboard.addKeyCapture([ Phaser.Keyboard.LEFT, Phaser.Keyboard.RIGHT, Phaser.Keyboard.SPACEBAR ]);
 
       // detect sound finishes and go to next page
-    fx.onStop.add(listener_right, this);
+    // fx.onStop.add(listener_right, this);
       
+      fx.play(0);
 },// END Create
 
 update: function() {
