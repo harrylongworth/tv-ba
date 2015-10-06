@@ -47,7 +47,7 @@ var loadState = {
 		
 		create: function() {
 		// Go to the menu state
-		game.state.start('menu');
+		game.state.start('play');
 		}			
 	
 };
