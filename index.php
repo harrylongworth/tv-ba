@@ -69,11 +69,6 @@ user-scalable=0 minimal-ui" />
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="HandheldFriendly" content="true" />
-
-
-
-
-    
     
 <?php
 
@@ -233,20 +228,14 @@ var loadState = {
 <script type="text/javascript" src="js/game.js"></script>
 </head>
     
-<body class="main">
-
-	  <div id="menubar">
-		  <div id="lefticon" onTouchStart="history.go(-1)" onClick="history.go(-1)"><i class="mainNav fa fa-arrow-circle-left fa-3x"></i></div>
-	      <div id="moviecat"><?php echo $folderName; ?></div>
-		  <div id="righticon" onTouchStart="goto_start ();" onClick="goto_start ();"><i class="mainNav fa fa-cog fa-3x"></i></div>
-	  </div>
-<hr>
+<body>
 <script>game.state.start('boot');</script>
-<div id="gameDiv"> </div>
-<p class="hiddenText"> . </p>
+<div id="gameDiv"></div>
+
     
         
-<?php } ?>
+<?php //<p class="hiddenText"> . </p> 
+  } ?>
 
     
 </body>

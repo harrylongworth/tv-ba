@@ -47,7 +47,7 @@ function now_okay() {
     
     var imageW;
     var imageH;
-    
+    /*
     if (h>w) {       
       imageW=w*0.8;
       imageH = (imageW*0.7);
@@ -60,7 +60,12 @@ function now_okay() {
     image.height=imageH;
     image.x=w/2;
     image.y=h*0.05;
-    
+    */
+    image.width=w;
+    image.height=h;
+    image.x=w/2;
+    image.y=0;
+        
     leftbutton.width= w/2;
     leftbutton.height=h;
     
@@ -69,10 +74,10 @@ function now_okay() {
     rightbutton.x = w/2;
     
     text.x = w/2;
-    text.y=(h-h*0.3);
+    text.y=(h-h*0.2);
     
     page_no.x = (w*0.9);
-    page_no.y = (h-h*0.2);   
+    page_no.y = (h-h*0.1);   
     
 } // END layout_screen
     
@@ -91,6 +96,7 @@ function listener_left () {
     image.loadTexture(counter+1);
     image.anchor.setTo(0.5, 0);
     
+    /*  
     var imageW;
     var imageH;
     
@@ -104,7 +110,10 @@ function listener_left () {
     
     image.width=imageW;
     image.height=imageH;
-    
+    */
+    image.width=w;
+    image.height=h;
+      
     if (counter >= pages-2) { counter = 0; }
         
   } // END too_soon
@@ -125,7 +134,7 @@ function listener_right () {
         
     image.loadTexture(counter+1);
     image.anchor.setTo(0.5, 0);
-    
+    /*
     var imageW;
     var imageH;
     
@@ -139,7 +148,9 @@ function listener_right () {
     
     image.width=imageW;
     image.height=imageH;
-    
+    */
+    image.width=w;
+    image.height=h;
     if (counter >= pages-1) { counter = -1; }
   } // END Too Soon
 
@@ -159,6 +170,7 @@ function goto_start () {
     image.loadTexture(counter+1);
     image.anchor.setTo(0.5, 0);
     
+      /*
     var imageW;
     var imageH;
     
@@ -172,8 +184,10 @@ function goto_start () {
     
     image.width=imageW;
     image.height=imageH;
-    
-        
+    */
+    image.width=w;
+    image.height=h;
+      
   } // END too_soon
     
 } // END goto_start

@@ -15,7 +15,8 @@ var playState = {
     rightbutton.alpha = 0;
     
     // Main Image
-    image = game.add.sprite(w/2, h*0.05, '1');
+    //image = game.add.sprite(w/2, h*0.05, '1');
+    image = game.add.sprite(w, h, '1');
     image.anchor.setTo(0.5, 0);
     
     // Caption text and page number:

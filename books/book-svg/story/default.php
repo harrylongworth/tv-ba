@@ -18,7 +18,7 @@ $story = array(
 
 $duration = array(3,3,3,3,3,3,3,3,3.5,2.5,3);
 
-$background_colour = '#3498db';
-$caption_colour = 'white';
+$background_colour = '#ffffff';
+$caption_colour = 'blue';
 
 ?>
